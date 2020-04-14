@@ -511,8 +511,8 @@ margin: 0 20px;
 		font-size: 20px;
 	}
 	.action_number {
-		width: 8.75%;
-		height: 8.75%;
+		max-width: 168px;
+		max-height: 168px;
 		font-size: 24px;
 		margin: auto;
 		flex-shrink: 0;
