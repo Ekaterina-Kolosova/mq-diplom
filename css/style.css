@@ -272,7 +272,7 @@ padding: 50px 20px;
 	vertical-align: text-top;
 }
 
-p.action_post {
+.action_post p {
 	font-size: 16px;
 	color: #000000;
 	font-family: Open Sans;
@@ -422,7 +422,7 @@ margin: 0 20px;
 	.action_title {
 		font-size: 80px;
 	}
-	.action_post~p {
+	.action_post p {
 		font-size: 24px;
 	}
 	.logo_big {
@@ -492,15 +492,15 @@ margin: 0 20px;
 	.action_article {
 		display: flex;
 		flex-direction: row;
-		justify-content: flex-start;
+		justify-content: space-between;
 		align-items: center;
 	}
 	.action_post {
-		padding-left: 132px;
+		padding-left: 6.87%;
+		padding-right: 10%;
 	}
 	.action_photo {
-		flex-basis: 50%;
-		width: 50%
+		min-width: 50%;
 		margin: 0;
 	}
 	
@@ -511,11 +511,16 @@ margin: 0 20px;
 		font-size: 20px;
 	}
 	.action_number {
-		width: 168px;
-		height: 168px;
+		width: 8.75%;
+		height: 8.75%;
 		font-size: 24px;
-		margin: 10% auto 0;
+		margin: auto;
 		flex-shrink: 0;
+		position: absolute;
+	}
+
+	.action_title {
+		margin: 0 0 110px;
 	}
 
 	.article_number::after {
@@ -524,10 +529,23 @@ margin: 0 20px;
 		border-radius: 2px;
 	}
 	.action:nth-child(2) {
-		order: 1;
+		order: 2;
 	}
 	.footer {
 	background-image: url("../images/game_1920.jpg")	
+	}
+	.logo_slogan {
+		display: flex;
+		flex-wrap: wrap;
+		min-width: 55%;
+		margin: 12% auto 0;
+		
+	}
+	.footer_slogan_common {
+		flex-shrink: 1;
+	}
+	.logo_big {
+		margin: 0 1.5% 0;
 	}
 }
 
